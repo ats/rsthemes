@@ -449,6 +449,8 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 
 .rstudio-themes-flat .ace_scroller {
   overflow: visible;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "dlig" 1;
 }
 
 .rstudio-themes-flat, .rstudio-themes-flat .rstudio-themes-dark.rstudio-themes-scrollbars {
@@ -2801,7 +2803,7 @@ input#rstudio_command_palette_search {
   color: #65737E !important;
 }
 
-.rstudio-themes-flat .dialogContent .gwt-TabLayoutPanelContent :not(label).gwt-Label {
+.rstudio-themes-flat .dialogContent .gwt-TabLayoutPanelContent .gwt-Label:not(label) {
   color: #84FFFF !important;
 }
 

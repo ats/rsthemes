@@ -415,6 +415,8 @@ table.rstheme_tabLayoutCenter,
   }
   .ace_scroller {
     overflow: visible;
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "dlig" 1;
   }
 }
 .rstudio-themes-flat, .rstudio-themes-flat .rstudio-themes-scrollbars {
