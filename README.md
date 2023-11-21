@@ -204,6 +204,19 @@ RStudio’s default theme, Textmate. Or, you can use
 `rsthemes::use_default_rstudio_theme()` to initiate the switch, perhaps
 from within the `.Rprofile` file of your teaching project.
 
+## Theme Development
+
+Themes are built using Sass files that are compiled into a finished style sheet for each theme. To modify a single theme, edit its `.scss` file in `inst/templates`. To change defaults for all themes, edit the files in `inst/templates/rstudio`. For example, to modify all dark themes, make changes to `inst/templates/rstudio/_rstudio-dark.scss`.
+
+After revising Sass files, you need to rebuild and reinstall the compiled style sheets:
+
+``` r
+rsthemes::make_rsthemes()
+rsthemes::install_rsthemes()
+```
+
+
+
 ## Uninstall
 
 If you want to uninstall all or some of the themes, you can use
